@@ -1,0 +1,70 @@
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+
+SAMPLE_RECORD = {
+    "doc_id": "002200_20250412_5b117085",
+    "company_name": "云南交投生态科技股份有限公司",
+    "stock_code": "002200",
+    "announcement_date": "2025-04-12",
+    "project_name": "G78汕昆高速／G80广昆高速石林至昆明段（改扩建）工程项目投资人招标",
+    "counterparty": "云南省交通运输厅委托云南省交通发展投资有限责任公司作为本次招标活动的招标执行机构",
+    "project_stage": "收到中标通知书",
+    "bid_amount_text": "通行费下浮率为0%，补偿金首次支付比例为80%。",
+    "risk_notice": "目前公司及联合体尚未与招标人签署正式协议。后续在组建项目公司及签订相关协议或合同过程中，若涉及关联交易的，公司还将按照相关监管要求履行关联交易审议程序，能否最终参与项目公司组建，并参与该项目涉及的绿化及环境保护工程施工，以及具体实施份额暂不确定。公司将根据项目进展情况及时履行信息披露义务。敬请广大投资者注意投资风险。",
+    "evidence": [
+        {
+            "field_name": "project_name",
+            "evidence_text": "1.项目名称：G78汕昆高速／G80广昆高速石林至昆明段（改扩建）工程项目投资人招标。",
+            "page_no": 2,
+            "confidence": 0.98,
+        },
+        {
+            "field_name": "counterparty",
+            "evidence_text": "4.项目招标人：云南省交通运输厅委托云南省交通发展投资有限责任公司作为本次招标活动的招标执行机构。",
+            "page_no": 2,
+            "confidence": 0.96,
+        },
+        {
+            "field_name": "project_stage",
+            "evidence_text": "近日公司收到该项目的《中标通知书》，公司参与的联合体被确定为该项目的中标人。",
+            "page_no": 1,
+            "confidence": 0.99,
+        },
+        {
+            "field_name": "bid_amount_text",
+            "evidence_text": "3.中标金额：通行费下浮率为0%，补偿金首次支付比例为80%。",
+            "page_no": 2,
+            "confidence": 0.97,
+        },
+        {
+            "field_name": "risk_notice",
+            "evidence_text": "目前公司及联合体尚未与招标人签署正式协议。后续在组建项目公司及签订相关协议或合同过程中，若涉及关联交易的，公司还将按照相关监管要求履行关联交易审议程序，能否最终参与项目公司组建，并参与该项目涉及的绿化及环境保护工程施工，以及具体实施份额暂不确定。公司将根据项目进展情况及时履行信息披露义务。敬请广大投资者注意投资风险。",
+            "page_no": 3,
+            "confidence": 0.98,
+        },
+    ],
+}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Write extraction result for the final repo demo chain.")
+    parser.add_argument(
+        "--output",
+        default="outputs/results/final_results.jsonl",
+        help="Output jsonl path.",
+    )
+    args = parser.parse_args()
+
+    base_dir = Path(__file__).resolve().parents[2]
+    output_path = base_dir / args.output
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(SAMPLE_RECORD, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"extraction written to {output_path}")
+
+
+if __name__ == "__main__":
+    main()

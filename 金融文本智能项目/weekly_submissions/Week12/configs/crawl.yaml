@@ -1,0 +1,28 @@
+project_name: "cninfo_bidding_announcements_tracker"
+source: "cninfo"
+keywords:
+  - "关于收到中标通知书的公告"
+  - "关于项目中标及收到中标通知书的公告"
+  - "关于中标项目的公告"
+  - "关于重大经营合同中标的公告"
+markets:
+  - "sz"
+  - "sh"
+date_range:
+  start: "2024-01-01"
+  end: "2026-05-29"
+max_records: 80
+page_size: 30
+max_pages_per_keyword: 5
+is_fulltext: false
+title_include_keywords:
+  - "中标通知书"
+  - "中标项目"
+  - "重大经营合同中标"
+  - "项目中标"
+sleep_seconds: 1.5
+output:
+  metadata: "data/metadata/metadata.csv"
+  pdf_dir: "data/pdf"
+  crawl_log: "outputs/logs/crawl_log.jsonl"
+  failed_downloads: "outputs/logs/failed_downloads.csv"

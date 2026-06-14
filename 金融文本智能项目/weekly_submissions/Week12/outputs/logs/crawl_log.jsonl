@@ -1,0 +1,6 @@
+{"time":"2026-05-28T22:28:00","step":"crawl","doc_id":"002200_20250412_5b117085","status":"success","error":null}
+{"time":"2026-05-28T22:28:02","step":"crawl","doc_id":"002090_20250613_59f744d5","status":"success","error":null}
+{"time":"2026-05-28T22:28:04","step":"crawl","doc_id":"002546_20250925_6b9c0f91","status":"success","error":null}
+{"time": "2026-05-29T10:36:55", "step": "crawl", "status": "success", "records": 5, "error": null}
+{"time": "2026-05-29T10:37:33", "step": "crawl", "status": "success", "records": 20, "error": null}
+{"time": "2026-05-29T10:41:11", "step": "crawl", "status": "success", "records": 80, "error": null}

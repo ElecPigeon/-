@@ -1,0 +1,24 @@
+target_sections:
+  project_details:
+    include_keywords:
+      - "中标情况"
+      - "项目名称"
+      - "招标人"
+      - "收到中标通知书"
+    exclude_keywords:
+      - "目录"
+      - "备查文件"
+      - "释义"
+    min_chars: 60
+    page_expansion: 0
+
+  risk_notice:
+    include_keywords:
+      - "风险提示"
+      - "尚未签署正式合同"
+      - "存在不确定性"
+    exclude_keywords:
+      - "目录"
+      - "释义"
+    min_chars: 40
+    page_expansion: 0

@@ -1,0 +1,1 @@
+{"doc_id":"validation_case_project_stage","status":"failed","error_type":"schema_error","field":"project_stage","message":"枚举值不在允许范围内：'收到通知'。建议改为 '收到中标通知书'。"}

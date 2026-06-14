@@ -1,0 +1,11 @@
+{"time":"2026-05-28T22:45:00","step":"audit","status":"success","detail":"metadata and pdf audit passed for demo record"}
+{"time":"2026-05-28T22:45:02","step":"parse","status":"success","detail":"parsed document available"}
+{"time":"2026-05-28T22:45:03","step":"route","status":"success","detail":"project_details and risk_notice sections found"}
+{"time":"2026-05-28T22:45:04","step":"extract","status":"success","detail":"extraction completed"}
+{"time":"2026-05-28T22:45:05","step":"validate","status":"success","detail":"pydantic validation passed"}
+{"time": "2026-05-29T10:20:14", "step": "audit", "status": "success", "detail": "final repo workflow run completed for step=audit, limit=1"}
+{"time": "2026-05-29T10:20:14", "step": "parse", "status": "success", "detail": "final repo workflow run completed for step=parse, limit=1"}
+{"time": "2026-05-29T10:20:14", "step": "route", "status": "success", "detail": "final repo workflow run completed for step=route, limit=1"}
+{"time": "2026-05-29T10:20:14", "step": "extract", "status": "success", "detail": "final repo workflow run completed for step=extract, limit=1"}
+{"time": "2026-05-29T10:20:14", "step": "validate", "status": "success", "detail": "final repo workflow run completed for step=validate, limit=1"}
+{"time": "2026-05-29T10:20:14", "step": "report", "status": "success", "detail": "final repo workflow run completed for step=report, limit=1"}

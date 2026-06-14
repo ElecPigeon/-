@@ -1,0 +1,2 @@
+doc_id,stock_code,stock_name,market,announcement_title,announcement_type,publish_date,url,pdf_url,local_pdf_path,download_status,source,crawl_time,error_message,notes
+002200_20250412_5b117085,002200,云南交投生态科技股份有限公司,sz,关于收到中标通知书的公告,中标通知书公告,2025-04-12,https://www.cninfo.com.cn/,https://static.cninfo.com.cn/finalpage/2025-04-12/1223071238.PDF,data/pdf/002200_002200_20250412_5b117085.pdf,success,cninfo,2026-05-28T22:28:00,,final repo demo record
